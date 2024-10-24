@@ -78,7 +78,51 @@ function sendMessage() {
             response = 'Posso responder perguntas, calcular operações matemáticas simples, contar piadas, dar dicas, e conversar sobre vários tópicos! O que você quer saber?';
         } else if (lowerCaseMessage.includes('qual é a sua função')) {
             response = 'Minha função é ajudar e conversar com você! Posso responder dúvidas, contar piadas e muito mais. Como posso ajudar hoje?';
+        } else if (lowerCaseMessage.includes('como você está') || lowerCaseMessage.includes('como vai')) {
+            response = 'Estou ótimo, obrigado por perguntar!';
+        } else if (lowerCaseMessage.includes('qual é o seu nome')) {
+            response = 'Meu nome é Maxusel.';
+        } else if (lowerCaseMessage.includes('o que você faz')) {
+            response = 'Eu sou um assistente virtual. Posso responder perguntas e ajudar com informações.';
+        } else if (lowerCaseMessage.includes('qual é o horário')) {
+            const now = new Date();
+            response = `Agora são ${now.getHours()}:${now.getMinutes()}`;
+        } else if (lowerCaseMessage.includes('piada')) {
+            response = 'Por que o alex é baitola? Porque ele gosta de rola kkkkkk';
+        } else if (lowerCaseMessage.includes('quem é você')) {
+            response = 'Eu sou Maxusel, uma IA criada para conversar e ajudar com suas dúvidas.';
+        } else if (lowerCaseMessage.includes('adeus') || lowerCaseMessage.includes('tchau')) {
+            response = 'Adeus! Até a próxima!';
+        } else if (lowerCaseMessage.includes('weather') || lowerCaseMessage.includes('tempo')) {
+            response = 'Desculpe, eu não posso verificar o clima no momento.';
+        } else if (lowerCaseMessage.includes('notícias') || lowerCaseMessage.includes('novidades')) {
+            response = 'Desculpe, eu não posso buscar as últimas notícias no momento.';
+        } else if (lowerCaseMessage.includes('assistência') || lowerCaseMessage.includes('ajuda')) {
+            response = 'Claro, como posso ajudar você hoje?';
+        } else if (lowerCaseMessage.includes('quanto é') || lowerCaseMessage.includes('calcule')) {
+            response = 'Desculpe, eu não posso fazer cálculos agora.';
+        } else if (lowerCaseMessage.includes('livro')) {
+            response = 'Você gosta de ler? Qual é o seu gênero favorito?';
+        } else if (lowerCaseMessage.includes('música')) {
+            response = 'Qual é a sua música ou artista favorito?';
+        } else if (lowerCaseMessage.includes('filme')) {
+            response = 'Qual foi o último filme que você assistiu?';
+        } else if (lowerCaseMessage.includes('receita') || lowerCaseMessage.includes('cozinhar')) {
+            response = 'Você gosta de cozinhar? Que tipo de receita você está procurando?';
+        } else if (lowerCaseMessage.includes('notícias') || lowerCaseMessage.includes('atualizações')) {
+            response = 'Desculpe, não posso acessar as últimas notícias no momento.';
+        } else if (lowerCaseMessage.includes('viagem')) {
+            response = 'Para onde você gostaria de viajar?';
+        } else if (lowerCaseMessage.includes('tecnologia') || lowerCaseMessage.includes('inovação')) {
+            response = 'A tecnologia está sempre mudando! Você está interessado em alguma novidade específica?';
+        } else if (lowerCaseMessage.includes('esporte')) {
+            response = 'Qual é o seu esporte favorito?';
+        } else if (lowerCaseMessage.includes('saúde') || lowerCaseMessage.includes('bem-estar')) {
+            response = 'A saúde é importante! Você está procurando dicas de bem-estar?';
+        } else if (lowerCaseMessage.includes('filosofia') || lowerCaseMessage.includes('pensamento')) {
+            response = 'A filosofia é fascinante! Existe algum filósofo ou conceito que você gosta?';
         }
+
 
         // Perguntas comuns sobre interesses e hobbies
         if (lowerCaseMessage.includes('livro')) {
